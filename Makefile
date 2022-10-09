@@ -45,11 +45,14 @@ include buildroot/package/amlogic/ipc/mbp/*.mk
 BUILD_CMD = $(shell echo $(MAKECMDGOALS) |tr '[a-z]' '[A-Z]'|tr '-' '_')
 TARGET=$($(BUILD_CMD)_SITE)/build
 
-$(info $(TARGET))
 $(info $(BUILD_CMD))
 $(MAKECMDGOALS): $(TARGET)
 
 $(TARGET):
 	$($(BUILD_CMD)_BUILD_CMDS)
 	$($(BUILD_CMD)_INSTALL_STAGING_CMDS)
+
+clean:
+	@find . -name objs|xargs -i rm {} -rf
+	@echo "mbi clean end."
 
