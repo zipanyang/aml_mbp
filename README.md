@@ -1,2 +1,2 @@
-# aml_mbp_build
+# aml_mbp
 compile aml mbp envirment
