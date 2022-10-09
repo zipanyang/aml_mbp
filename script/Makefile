@@ -36,7 +36,4 @@ mbd-venc-clean:
 	@find mbd/venc -name '*.ko'|xargs -i rm {}
 	@find mbd/venc -name '*.o'|xargs -i rm {}
 
-clean:
-	cd  $(TARGET_DIR) && $(MAKE) clean
-
 .PHONY: $(MAKECMDGOALS) $(MBD_TARGET)

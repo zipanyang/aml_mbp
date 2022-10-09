@@ -10,5 +10,4 @@ cd -
 cd vendor/amlogic/ipc/mbp/sample
 git apply ../../../../../patch/sample-c3.patch
 cd -
-cp script/Makefile vendor/amlogic/ipc/mbp/
-
+ln -s `pwd`/script/Makefile vendor/amlogic/ipc/mbp
