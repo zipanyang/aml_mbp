@@ -7,7 +7,4 @@ ln -s `pwd`/buildroot/package .
 cd buildroot
 git apply ../patch/buildroot-c3.patch
 cd -
-cd vendor/amlogic/ipc/mbp/sample
-git apply ../../../../../patch/sample-c3.patch
-cd -
 ln -s `pwd`/script/Makefile vendor/amlogic/ipc/mbp
